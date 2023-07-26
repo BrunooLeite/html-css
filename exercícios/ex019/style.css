@@ -1,0 +1,36 @@
+@charset "utf-8";
+ 
+body{
+    background-color:#6684F5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color:#314075 ;
+}
+h1#principal{
+    text-align: center;
+    background-color: #5C78DB;
+    color: #161D36;
+}
+h2 {
+    color:  #4C63B5;
+}
+p {
+    color: #161D36;
+}
+.basico {
+    color: rgb(255, 0, 0);
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.intermediario {
+    color: rgb(197, 0, 0);
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+}
+.avancado {
+    color: rgb(141, 0, 0);
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+}
