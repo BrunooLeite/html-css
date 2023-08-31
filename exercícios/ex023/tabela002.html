@@ -5,13 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
+        h1{ 
+            margin-left: 12px;
+        }
         body{
             font-family: Arial, Helvetica, sans-serif;
 
         }
+        caption{
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 12px;
+            background-color: lightgray;
+        }
         table{
-            width: 500px;
+            width: 400px;
             border-collapse: collapse;
+            position: relative;
         }
         td, Th{
             border: 1px solid black;
@@ -21,18 +31,31 @@
             background-color: gray;
             color: rgb(255, 255, 255);
         }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
         td.num {
             text-align: right;
+        }
+        tfoot{
+            color: white;
+            background-color: gray;
         }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>População das unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>população</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 55px;">população</th>
 
             </tr>
         </thead>
@@ -148,7 +171,7 @@
     
         </tbody>
         <tfoot>
-            <th>total de habitantes</th>
+            <th scope="row">total de habitantes</th>
             <td class="num"><strong>203.062.512</strong></td>
         </tfoot>
     </table>
